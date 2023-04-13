@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcelestial=self.webpackChunkcelestial||[]).push([[526],{5523:e=>{e.exports=JSON.parse('{"label":"facebook","permalink":"/celestial-docs/blog/tags/facebook","allTagsPath":"/celestial-docs/blog/tags","count":1}')}}]);
