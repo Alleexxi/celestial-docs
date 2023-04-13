@@ -33,7 +33,7 @@ export const CardLink = ({ title, description, href, image_src }) => (
 );
 <!-- Rectangular Reference Link -->
 export const ReferenceLink = ({ children, href }) => (
-	<a class="reference-link" href={href.startsWith("http") ? href : `https://alleexxi.github.io/celestial-docs/docs/${href}`}>
+	<a class="reference-link" href={href`}>
 		{children}
 		<span>
 			{href}
@@ -51,13 +51,6 @@ export const BaseBasicType = (label, description) => (
 			<span dangerouslySetInnerHTML={{ __html: description }}></span>
 		</>
 	}>
-	</Tippy>
-);
-
-<!-- Define Special Path component -->
-export const SpecialPath = (type, label, description) => (
-	<Tippy interactive={true} maxWidth={400} animation={"scale-subtle"} placement={"left"} content={<AssetPathToolTip label={label} description={description} />}>
-		<Link to={`http://localhost:3000/docs/scripting-reference/glossary/basic-types#specialpath`} className={"hover-link"}>{label}</Link>
 	</Tippy>
 );
 
