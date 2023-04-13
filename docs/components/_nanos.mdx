@@ -31,9 +31,9 @@ export const CardLink = ({ title, description, href, image_src }) => (
 		<p>{description}</p>
 	</a>
 );
-<!-- Rectangular Reference Link -->
+
 export const ReferenceLink = ({ children, href }) => (
-	<a class="reference-link" href={href`}>
+	<a class="reference-link" href={href}>
 		{children}
 		<span>
 			{href}
